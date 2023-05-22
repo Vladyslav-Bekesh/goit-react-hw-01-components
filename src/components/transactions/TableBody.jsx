@@ -1,7 +1,6 @@
 import TableRow from './TablleRow';
 
-function TableBody(transactions) {
-  console.log(transactions);
+function TableBody({transactions}) {
   return (
     <tbody>
       {transactions.map(({ type, amount, currency, id }) => {

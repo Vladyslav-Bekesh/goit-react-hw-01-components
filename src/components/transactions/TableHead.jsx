@@ -1,11 +1,13 @@
+import { ThCss, TrCss } from './Table.styled';
+
 function TableHead() {
   return (
     <thead>
-      <tr>
-        <th>Type</th>
-        <th>Amount</th>
-        <th>Currency</th>
-      </tr>
+      <TrCss>
+        <ThCss>Type</ThCss>
+        <ThCss>Amount</ThCss>
+        <ThCss>Currency</ThCss>
+      </TrCss>
     </thead>
   );
 }

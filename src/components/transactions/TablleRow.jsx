@@ -1,10 +1,12 @@
+import { TdCss, TrCss } from './Table.styled';
+
 function TableRow({ type, amount, currency }) {
   return (
-    <tr>
-      <td>{type}</td>
-      <td>{amount}</td>
-      <td>{currency}</td>
-    </tr>
+    <TrCss>
+      <TdCss>{type}</TdCss>
+      <TdCss>{amount}</TdCss>
+      <TdCss>{currency}</TdCss>
+    </TrCss>
   );
 }
 
