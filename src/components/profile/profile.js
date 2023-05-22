@@ -5,7 +5,7 @@ import {
   ProfileContainer,
   Description,
   Stats,
-} from '../profile/profile.styled.jsx';
+} from './profile.styled.jsx';
 
 function Profile({
   username,
