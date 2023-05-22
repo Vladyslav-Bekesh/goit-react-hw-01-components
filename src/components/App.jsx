@@ -1,5 +1,6 @@
 import Stats from './stats/stats';
 import Profile from './profile/profile';
+import Friends from './friends/friends';
 
 import user from '../../src/data/user.json';
 
@@ -15,6 +16,7 @@ export default function App(params) {
       ></Profile>
 
       <Stats title="Statistic"></Stats>
+      <Friends></Friends>
     </>
   );
 }

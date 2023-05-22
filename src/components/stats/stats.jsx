@@ -8,7 +8,7 @@ import { StatsContainerCss, StatsTitleCss } from './stats.styled';
 function Stats({ title }) {
   return (
     <StatsContainerCss>
-      <StatsTitleCss className="title">{title}</StatsTitleCss>
+      <StatsTitleCss>{title}</StatsTitleCss>
       
       <StatsList stats={stats}></StatsList>
     </StatsContainerCss>

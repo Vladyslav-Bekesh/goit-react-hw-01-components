@@ -4,8 +4,8 @@ import { StatsItemCss } from './stats.styled';
 function StatItem({ label, percentage}) {
   return (
     <StatsItemCss>
-      <span class="label">{label}</span>
-      <span class="percentage">{percentage}%</span>
+      <span>{label}</span>
+      <span>{percentage}%</span>
     </StatsItemCss>
   );
 }
