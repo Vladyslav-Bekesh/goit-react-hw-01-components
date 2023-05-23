@@ -1,12 +1,15 @@
-import StatItem from './StatsItem';
-import { StatsListCss } from './stats.styled';
+import PropTypes from 'prop-types';
+import { StatsListCss, StatsItemCss } from './Stats.styled';
 
 function StatsList({ stats }) {
   return (
     <StatsListCss>
       {stats.map(({ label, percentage, id }) => {
         return (
-          <StatItem key={id} label={label} percentage={percentage}></StatItem>
+          <StatsItemCss key={id}>
+            <span>{label}</span>
+            <span>{percentage}%</span>
+          </StatsItemCss>
         );
       })}
     </StatsListCss>
@@ -14,3 +17,13 @@ function StatsList({ stats }) {
 }
 
 export default StatsList;
+
+StatsList.propTypes = {
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      label: PropTypes.string,
+      percentage: PropTypes.number,
+      id: PropTypes.string,
+    })
+  ),
+};
